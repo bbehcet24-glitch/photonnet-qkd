@@ -109,7 +109,7 @@ jobs:
     timeout-minutes: 3
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: CI YAML dosyalarında CA ÖZEL anahtarına işaret eden bir secret referansı ara
         run: |
@@ -134,10 +134,10 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -182,10 +182,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -207,7 +207,7 @@ jobs:
 
       - name: Senaryo raporunu artifact olarak yükle
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: mtls-cert-rotation-revocation-report
           path: ci-reports/mtls-scenarios/
@@ -238,10 +238,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -259,7 +259,7 @@ jobs:
 
       - name: Test raporlarını/log'ları artifact olarak yükle
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ibm-integration-ci-reports
           path: ci-reports/ibm-integration/
@@ -292,10 +292,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -336,7 +336,7 @@ jobs:
 
       - name: Test raporlarını/log'ları artifact olarak yükle
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ibm-integration-external-reports
           path: ci-reports/ibm-integration/
@@ -379,10 +379,10 @@ jobs:
         shell: bash
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -546,7 +546,7 @@ jobs:
 
       - name: HSM-arkalı PKI çıktısını artifact olarak yükle (denetlenebilirlik)
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: software-hsm-pki-output
           path: |
@@ -568,13 +568,13 @@ jobs:
     timeout-minutes: 45
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # tam geçmiş: protocol_fingerprint_test F5, CORE_CHANGELOG'daki sürüm ↔ commit tablosunu git'ten denetler
           fetch-depth: 0
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -593,7 +593,7 @@ jobs:
 
       - name: Test özetini artifact olarak yükle
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: npm-test-summary
           path: ci-reports/npm_test_summary.json
@@ -614,10 +614,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Depoyu çek
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Node.js kur
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
 
@@ -661,7 +661,7 @@ jobs:
 
       - name: Üretim derlemesini + test raporlarını artifact olarak yükle
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: production-build-stripped
           path: |
@@ -702,7 +702,7 @@ jobs:
           echo "✓ Sürüm formatı geçerli: $V"
 
       - name: Depoyu çek (tam geçmiş — tag oluşturmak için)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
