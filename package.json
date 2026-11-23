@@ -1,7 +1,7 @@
 {
   "name": "photonnet",
   "version": "1.0.0",
-  "description": "PhotonNet — BB84 QKD simulation, ETSI GS QKD 014 KME and shielding-aware network control layers",
+  "description": "PhotonNet: QKD Network Simulator with ETSI-014 Key Management — BB84 QKD simulation, ETSI GS QKD 014 KME and shielding-aware network control layers",
   "main": "index.js",
   "scripts": {
     "test": "node bb84/tools/run_all_tests.js",

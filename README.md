@@ -1,4 +1,4 @@
-# PhotonNet — BB84 Quantum Key Distribution (QKD) Simulator and Production Layers
+# PhotonNet: QKD Network Simulator with ETSI-014 Key Management
 
 **photonicquantumcore** · core engine v5.4 · `npm test`: 112 runner items (JavaScript + Python HAL) in CI — what that number counts is in [`docs/TEST_INVENTORY.md`](docs/TEST_INVENTORY.md)
 
