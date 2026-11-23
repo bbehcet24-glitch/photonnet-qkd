@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:47:07.205Z",
+  "generatedAt": "2026-11-23T20:01:33.190Z",
   "checks": [
     {
       "name": "H1 Ed25519 açma yetkisi: geçerli belge kabul; kurcalanmış, sahte anahtar, başka düğüm, zaman dışı, aşırı ömür, boşaltma beyanı yok/bayat, çözülemeyen ve TEKRAR kullanılan belgelerin hepsi reddediliyor ve kilit KİLİTLİ kalıyor",
@@ -19,7 +19,7 @@
     {
       "name": "H4 Gerçek HTTP kilit API'si (127.0.0.1): yetki → POST unlock 200 → yetkili giriş → kapanış → yeniden kilit; olaylar HTTP ile alınıyor; aynı belgenin tekrarı ve sahte imzalı belge 403",
       "ok": true,
-      "detail": "http://127.0.0.1:36761 · durum LOCKED → unlock HTTP 200 (UNLOCKED) → olaylar [UNLOCKED, DOOR_OPENED, DOOR_CLOSED, RELOCKED] · tekrar HTTP 403 \"belge daha önce kullanılmış (tekrar)\" · sahte HTTP 403 \"imza geçersiz\" · son durum LOCKED"
+      "detail": "http://127.0.0.1:38611 · durum LOCKED → unlock HTTP 200 (UNLOCKED) → olaylar [UNLOCKED, DOOR_OPENED, DOOR_CLOSED, RELOCKED] · tekrar HTTP 403 \"belge daha önce kullanılmış (tekrar)\" · sahte HTTP 403 \"imza geçersiz\" · son durum LOCKED"
     },
     {
       "name": "H5 Zorla açma (40 deneme, açılış fazı rastgele): yalnız SE izleyicisiyle maruziyet bir sonraki 50 ms örneğine kadar sürüyor; kapı sensörü + olay-tetikli yeniden planlamayla sensör gecikmesine (5 ms) iniyor; her denemede INCIDENT",

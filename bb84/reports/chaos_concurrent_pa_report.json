@@ -1,227 +1,227 @@
 {
-  "generatedAt": "2026-11-20T13:48:11.293Z",
-  "coreShaVerified": "4f664688da958752abb7ede77890f1d94640250aca988c6d2e7fadf46f492b39",
+  "generatedAt": "2026-11-23T20:02:26.595Z",
+  "coreShaVerified": "13b8bd0ccae688b682e28399c212426636990ede04c1df7784a68a4aab75316c",
   "workerAvailableInThisEnv": false,
   "totalAsyncBlocksTested": 20,
   "dispatchLatencyStats": {
-    "meanMs": 91,
-    "maxMs": 213,
+    "meanMs": 64,
+    "maxMs": 99,
     "samples": [
       {
         "scenario": "A",
         "t": 0,
         "routeKey": "KAOS-B-0",
         "nBits": 52000,
-        "dispatchLatencyMs": 131
+        "dispatchLatencyMs": 97
       },
       {
         "scenario": "A",
         "t": 0,
         "routeKey": "KAOS-A-0",
         "nBits": 46000,
-        "dispatchLatencyMs": 140
+        "dispatchLatencyMs": 86
       },
       {
         "scenario": "A",
         "t": 0,
         "routeKey": "KAOS-C-0",
         "nBits": 2000,
-        "dispatchLatencyMs": 64
+        "dispatchLatencyMs": 61
       },
       {
         "scenario": "B",
         "t": 0,
         "routeKey": "KAOS-D-0",
         "nBits": 48000,
-        "dispatchLatencyMs": 72
+        "dispatchLatencyMs": 68
       },
       {
         "scenario": "B",
         "t": 0,
         "routeKey": "KAOS-D-0",
         "nBits": 54000,
-        "dispatchLatencyMs": 56
+        "dispatchLatencyMs": 53
       },
       {
         "scenario": "A",
         "t": 1,
         "routeKey": "KAOS-B-1",
         "nBits": 52000,
-        "dispatchLatencyMs": 79
+        "dispatchLatencyMs": 94
       },
       {
         "scenario": "A",
         "t": 1,
         "routeKey": "KAOS-A-1",
         "nBits": 46000,
-        "dispatchLatencyMs": 72
+        "dispatchLatencyMs": 98
       },
       {
         "scenario": "A",
         "t": 1,
         "routeKey": "KAOS-C-1",
         "nBits": 2000,
-        "dispatchLatencyMs": 105
+        "dispatchLatencyMs": 99
       },
       {
         "scenario": "B",
         "t": 1,
         "routeKey": "KAOS-D-1",
         "nBits": 48000,
-        "dispatchLatencyMs": 128
+        "dispatchLatencyMs": 39
       },
       {
         "scenario": "B",
         "t": 1,
         "routeKey": "KAOS-D-1",
         "nBits": 54000,
-        "dispatchLatencyMs": 76
+        "dispatchLatencyMs": 47
       },
       {
         "scenario": "A",
         "t": 2,
         "routeKey": "KAOS-B-2",
         "nBits": 52000,
-        "dispatchLatencyMs": 50
+        "dispatchLatencyMs": 46
       },
       {
         "scenario": "A",
         "t": 2,
         "routeKey": "KAOS-A-2",
         "nBits": 46000,
-        "dispatchLatencyMs": 67
+        "dispatchLatencyMs": 45
       },
       {
         "scenario": "A",
         "t": 2,
         "routeKey": "KAOS-C-2",
         "nBits": 2000,
-        "dispatchLatencyMs": 54
+        "dispatchLatencyMs": 69
       },
       {
         "scenario": "B",
         "t": 2,
         "routeKey": "KAOS-D-2",
         "nBits": 48000,
-        "dispatchLatencyMs": 78
+        "dispatchLatencyMs": 39
       },
       {
         "scenario": "B",
         "t": 2,
         "routeKey": "KAOS-D-2",
         "nBits": 54000,
-        "dispatchLatencyMs": 84
+        "dispatchLatencyMs": 48
       },
       {
         "scenario": "A",
         "t": 3,
         "routeKey": "KAOS-B-3",
         "nBits": 52000,
-        "dispatchLatencyMs": 56
+        "dispatchLatencyMs": 71
       },
       {
         "scenario": "A",
         "t": 3,
         "routeKey": "KAOS-A-3",
         "nBits": 46000,
-        "dispatchLatencyMs": 118
+        "dispatchLatencyMs": 74
       },
       {
         "scenario": "A",
         "t": 3,
         "routeKey": "KAOS-C-3",
         "nBits": 2000,
-        "dispatchLatencyMs": 98
+        "dispatchLatencyMs": 71
       },
       {
         "scenario": "B",
         "t": 3,
         "routeKey": "KAOS-D-3",
         "nBits": 48000,
-        "dispatchLatencyMs": 152
+        "dispatchLatencyMs": 48
       },
       {
         "scenario": "B",
         "t": 3,
         "routeKey": "KAOS-D-3",
         "nBits": 54000,
-        "dispatchLatencyMs": 213
+        "dispatchLatencyMs": 47
       },
       {
         "scenario": "A",
         "t": 4,
         "routeKey": "KAOS-B-4",
         "nBits": 52000,
-        "dispatchLatencyMs": 58
+        "dispatchLatencyMs": 49
       },
       {
         "scenario": "A",
         "t": 4,
         "routeKey": "KAOS-A-4",
         "nBits": 46000,
-        "dispatchLatencyMs": 86
+        "dispatchLatencyMs": 46
       },
       {
         "scenario": "A",
         "t": 4,
         "routeKey": "KAOS-C-4",
         "nBits": 2000,
-        "dispatchLatencyMs": 105
+        "dispatchLatencyMs": 88
       },
       {
         "scenario": "B",
         "t": 4,
         "routeKey": "KAOS-D-4",
         "nBits": 48000,
-        "dispatchLatencyMs": 62
+        "dispatchLatencyMs": 56
       },
       {
         "scenario": "B",
         "t": 4,
         "routeKey": "KAOS-D-4",
         "nBits": 54000,
-        "dispatchLatencyMs": 67
+        "dispatchLatencyMs": 68
       }
     ]
   },
   "reconciliationScalingBenchmark": [
     {
       "n": 10000,
-      "cascadeMs": 22,
-      "ldpcMs": 895,
-      "ldpcVsCascadeRatio": 40.7,
+      "cascadeMs": 14,
+      "ldpcMs": 590,
+      "ldpcVsCascadeRatio": 42.1,
       "cascadeConverged": true,
       "ldpcConverged": true
     },
     {
       "n": 25000,
-      "cascadeMs": 34,
-      "ldpcMs": 2278,
-      "ldpcVsCascadeRatio": 67,
+      "cascadeMs": 23,
+      "ldpcMs": 1865,
+      "ldpcVsCascadeRatio": 81.1,
       "cascadeConverged": true,
       "ldpcConverged": true
     },
     {
       "n": 50000,
-      "cascadeMs": 123,
-      "ldpcMs": 4274,
-      "ldpcVsCascadeRatio": 34.7,
+      "cascadeMs": 74,
+      "ldpcMs": 2981,
+      "ldpcVsCascadeRatio": 40.3,
       "cascadeConverged": true,
       "ldpcConverged": true
     },
     {
       "n": 100000,
-      "cascadeMs": 341,
-      "ldpcMs": 13073,
-      "ldpcVsCascadeRatio": 38.3,
+      "cascadeMs": 150,
+      "ldpcMs": 9757,
+      "ldpcVsCascadeRatio": 65,
       "cascadeConverged": true,
       "ldpcConverged": true
     },
     {
       "n": 150000,
-      "cascadeMs": 410,
-      "ldpcMs": 19875,
-      "ldpcVsCascadeRatio": 48.5,
+      "cascadeMs": 188,
+      "ldpcMs": 18319,
+      "ldpcVsCascadeRatio": 97.4,
       "cascadeConverged": true,
       "ldpcConverged": true
     }

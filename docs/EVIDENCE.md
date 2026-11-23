@@ -7,6 +7,32 @@ records the SHA-256 of each test file and an aggregate (`testFilesSha256`), so "
 checked by comparing the core hash and the test-file hash of two runs. The `npm test` and UI runs are local (Linux, Node
 22.23.4, Python 3.13.18); the GitHub Actions run is listed in its own section.
 
+## Core v5.4, UI only (`ee56074`: the in-app header matches the product name)
+
+The header text changed from "QUANTUM OPTICAL NETWORK" to "QKD NETWORK SIMULATOR · ETSI-014 KEY MANAGEMENT". The core
+is extracted from the UI source, so its file hash changed (`4f664688…492b39` → `13b8bd0c…75316c`); the protocol
+fingerprint is unchanged (`6b874b6c…197cfc`), so the version name stays v5.4 (`bb84/docs/CORE_CHANGELOG.md`).
+
+### Full suite (`npm test`)
+
+| Commit | What it is | Tree | Core SHA-256 | Test files SHA-256 | Result | Run (UTC) |
+|---|---|---|---|---|---|---|
+| `ee56074` | UI header text; pinned tests moved to the new core hash | clean | `13b8bd0c…75316c` | `2e2d832a…4d01e4` (110 files) | **112/112** | 2026-11-23 20:01:28 → 20:17:27 |
+
+### UI scenarios and tools on the `ee56074` build (Playwright, Chromium 153)
+
+| Scenario / tool | Result |
+|---|---|
+| `bb84/tools/ts_hybrid_qkd_04.js` | 17/17; S2 at t = −60 s delivered (ℓ 128); S1 spec band observation: outside (1.50 % / 1.62 %) |
+| `bb84/tools/ui_abort_drill.js` | 9/9 |
+| Header | "QKD NETWORK SIMULATOR · ETSI-014 KEY MANAGEMENT v8.0 · ÇEKİRDEK v5.4" (`docs/screenshots/01_network_transmit.png`) |
+| `ell_audit.js`, `test_inventory.js`, `capture_screenshots.js` | regenerated; 641/641 checks in 73 reports |
+
+### GitHub Actions
+
+The Actions runs for `1054d48` (Node 24 action versions), `236a267` (product title) and `ee56074` have not been
+seen here yet (no API access).
+
 ## Core v5.4 (reviewer, after v5.3: encrypt-then-MAC, ε of the MAC, inventory arithmetic)
 
 ### Full suite (`npm test`)

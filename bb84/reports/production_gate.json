@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:54:13.478Z",
+  "generatedAt": "2026-11-23T20:07:27.233Z",
   "checks": [
     {
       "name": "(A) KLASİK KANAL MAC: v5.2'ye kadarki çekirdek primitifi ZAYIF (tahrifat ~%41 kaçar); v5.3 çekirdeği ve katman MAC'i ~%0",
@@ -39,7 +39,7 @@
     {
       "name": "ÇEKİRDEK DOKUNULMADI: photonnet_core.js SHA-256 değişmedi",
       "ok": true,
-      "detail": "SHA-256 4f664688da958752… öncesi = sonrası — test çekirdeği değiştirmedi (MAC düzeltmesi v5.3'te çekirdeğe de taşındı)"
+      "detail": "SHA-256 13b8bd0ccae688b6… öncesi = sonrası — test çekirdeği değiştirmedi (MAC düzeltmesi v5.3'te çekirdeğe de taşındı)"
     }
   ],
   "mac": {
@@ -131,7 +131,7 @@
   ],
   "coreIntegrity": {
     "unchanged": true,
-    "sha256": "4f664688da958752"
+    "sha256": "13b8bd0ccae688b6"
   },
   "allChecksPassed": true
 }

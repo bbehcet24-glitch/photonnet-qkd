@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:50:20.124Z",
+  "generatedAt": "2026-11-23T20:04:23.527Z",
   "checks": [
     {
       "name": "(A) ANAHTAR KAPALI: enabled=false (veya cycles=0) → nominal değerlendirme AYNEN döner (sıfır fark)",
@@ -39,7 +39,7 @@
     {
       "name": "ÇEKİRDEĞE DOKUNULMADI: photonnet_core.js SHA-256 değişmedi",
       "ok": true,
-      "detail": "SHA-256 4f664688da958752… öncesi = sonrası"
+      "detail": "SHA-256 13b8bd0ccae688b6… öncesi = sonrası"
     }
   ],
   "nominal": {
@@ -2552,7 +2552,7 @@
   },
   "coreIntegrity": {
     "unchanged": true,
-    "sha256": "4f664688da958752"
+    "sha256": "13b8bd0ccae688b6"
   },
   "allChecksPassed": true
 }

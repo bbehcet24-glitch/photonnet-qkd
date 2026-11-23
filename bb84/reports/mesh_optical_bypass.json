@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:53:14.392Z",
+  "generatedAt": "2026-11-23T20:06:33.930Z",
   "part": "3/3 optik bypass",
   "checks": [
     {
@@ -38,9 +38,9 @@
       "detail": "69 s sonra: QUARANTINED · KDK kanıtı: self=1.06, neighbor=null · operatör onayı → PROBATION"
     },
     {
-      "name": "Çekirdek ve yeniden kullanılan modüller değişmedi (photonnet_core.js SHA-256 = 4f664688…492b39)",
+      "name": "Çekirdek ve yeniden kullanılan modüller değişmedi (photonnet_core.js SHA-256 = 13b8bd0c…75316c)",
       "ok": true,
-      "detail": "photonnet_core.js 4f664688da95… · adaptive_shielding_mitigation.js ac19ff793cc8… · qkd_network_scale.js b5bdf72ef541…"
+      "detail": "photonnet_core.js 13b8bd0ccae6… · adaptive_shielding_mitigation.js ac19ff793cc8… · qkd_network_scale.js b5bdf72ef541…"
     }
   ],
   "passed": 8,

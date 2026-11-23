@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:48:50.592Z",
+  "generatedAt": "2026-11-23T20:03:04.641Z",
   "checks": [
     {
       "name": "(A) İDEAL vs GERÇEK: gerçek dedektör kusurları QBER'i ideal tahminin ÜSTÜNE çıkarır",
@@ -29,7 +29,7 @@
     {
       "name": "ÇEKİRDEK DOKUNULMADI: photonnet_core.js SHA-256 değişmedi",
       "ok": true,
-      "detail": "SHA-256 4f664688da958752… öncesi = sonrası — yalnız QKDSecurityProof.secureKeyLength çağrıldı"
+      "detail": "SHA-256 13b8bd0ccae688b6… öncesi = sonrası — yalnız QKDSecurityProof.secureKeyLength çağrıldı"
     }
   ],
   "decomposition": {
@@ -98,7 +98,7 @@
   },
   "coreIntegrity": {
     "unchanged": true,
-    "sha256": "4f664688da958752"
+    "sha256": "13b8bd0ccae688b6"
   },
   "params": {
     "pulses": 300000,

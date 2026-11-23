@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T14:11:49.307Z",
+  "generatedAt": "2026-11-23T20:23:06.068Z",
   "checks": [
     {
       "name": "F1 Kayıtlı protokol parmak izi güncel",
@@ -9,7 +9,7 @@
     {
       "name": "F2 Yalnız arayüz metni değişince dosya hash'i değişiyor, protokol parmak izi değişmiyor",
       "ok": true,
-      "detail": "dosya 4f664688da95 → cbd15be0383f; parmak izi 6b874b6c91ea → 6b874b6c91ea"
+      "detail": "dosya 13b8bd0ccae6 → 2536345a19e5; parmak izi 6b874b6c91ea → 6b874b6c91ea"
     },
     {
       "name": "F3 Fizik sabiti (e_d) değişince protokol parmak izi değişiyor",
@@ -19,7 +19,7 @@
     {
       "name": "F5 Sürüm ↔ commit tablosu git geçmişiyle tutarlı (dosya hash'i ve protokol parmak izi)",
       "ok": true,
-      "detail": "12 satır, 12 denetlendi"
+      "detail": "13 satır, 13 denetlendi"
     },
     {
       "name": "F4 Protokol parmak izi CORE_CHANGELOG.md'de kayıtlı",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:54:46.260Z",
+  "generatedAt": "2026-11-23T20:07:50.155Z",
   "checks": [
     {
       "name": "Uzatılmış akış hâlâ durağan (18 epoch, 61.2 s)",
@@ -81,7 +81,7 @@
     },
     "ePh": 0.052866,
     "leakPerBit": 0.0013,
-    "buildSeconds": 21.1
+    "buildSeconds": 16.5
   },
   "ceilingBps": 1881.59,
   "curve": [

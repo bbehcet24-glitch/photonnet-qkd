@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:53:09.487Z",
+  "generatedAt": "2026-11-23T20:06:30.250Z",
   "checks": [
     {
       "name": "M1 Koordinatör: ADVISORY→PLANNED (ağ değişmez), WARNING→DRAIN, pencere→MAINTENANCE (süre aşılsa da tamamlanana kadar), tamamlama→NORMAL; ani düşüş→DRAIN; uyarı düşerse DRAIN kalkar; planlı kesinti bildirimi üretiliyor",
@@ -44,7 +44,7 @@
     {
       "name": "Bütünlük: çekirdek ve yeniden kullanılan modüllerin SHA-256'sı test boyunca değişmedi; koordinatör çekirdeği import etmiyor",
       "ok": true,
-      "detail": "5 dosya değişmedi · core 4f664688da958752…"
+      "detail": "5 dosya değişmedi · core 13b8bd0ccae688b6…"
     }
   ],
   "chain": {
