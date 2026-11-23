@@ -32,7 +32,10 @@ const core = require("./photonnet_core.js");
 
 const out = { generatedAt: new Date().toISOString(), checks: [] };
 const chk = (name, ok, detail) => { out.checks.push({ name, ok: !!ok, detail }); return ok; };
-const rb = (n) => Array.from(crypto.randomBytes(n), (x) => x & 1);
+// T1–T5 entropisi sabit tohumlu SHA-256 sayaç üretecinden (tohum "t1t5:20261123", ilk ve tek seçim): kriptografik
+// rastgelelikle T1 (%25 örtüşme), T3 (%8 hatalı atlama %11'i aşabiliyor) ve T5 (Cascade doğal olarak yakınsamayabiliyor)
+// 120 yerel koşunun 9'unda kalıyordu; CI 44752188129 (T5) ve 44897487726 bu yüzden kaldı.
+const rb = (() => { let ctr = 0; return (n) => { const out = []; while (out.length < n) { const b = crypto.createHash("sha256").update(`t1t5:20261123:${ctr++}`).digest(); for (const x of b) for (let i = 7; i >= 0 && out.length < n; i--) out.push((x >> i) & 1); } return out; }; })();
 const ctx = (p = "snspd") => ({ isNight: true, freeSpace: false, detectorProfile: p });
 const coreSha = crypto.createHash("sha256").update(fs.readFileSync(path.join(__dirname, "photonnet_core.js"))).digest("hex");
 
