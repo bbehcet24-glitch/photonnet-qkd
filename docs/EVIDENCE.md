@@ -26,8 +26,17 @@ checked by comparing the core hash and the test-file hash of two runs. The `npm 
 
 ### GitHub Actions
 
-`432d84f` (core v5.3) was pushed; its Actions result has not been seen here (no API access). The CI result that
-closes the reviewer's condition is the one for the newest pushed commit.
+| Run | Event | Commit | Conclusion |
+|---|---|---|---|
+| 44752188129 | push | `8e98b59` | failure: `core_v4_session_test` T5 (gate 5) |
+| 44897487726 | schedule | `8e98b59` | failure: `core_v4_session_test` (gate 5) |
+| 45017457898 | schedule | `8e98b59` | success |
+| 45150371635 | push | `2ac75d4` | **success**; gate 3b (external) and gate 4 skipped (they run only on `workflow_dispatch`) |
+
+The two failures were sampling against fixed thresholds in T1–T5, not a code fault (`docs/TEST_CHANGELOG.md`).
+`2ac75d4` differs from `8e98b59` only in `bb84/core_v4_session_test.js` (T1–T5 seeded) and that changelog row; the
+core is unchanged. Run 45150371635 is the CI result for the newest pushed commit. The result was read from
+`gh run watch` on the user's machine (no API access here).
 
 ## Core v5.3 (reviewer rubric: authentication, key lifecycle, evidence chain)
 
