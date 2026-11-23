@@ -669,8 +669,10 @@ MEASURES (without assuming) WHAT HAPPENS when the system meets a real/slow/malic
 re-verified as 0 findings under the SAME real condition — no fix was accepted untested on the grounds that
 "it should be logically correct". The SHA-256 of `photonnet_core.js`
 (`8f879fde86be012938e710deda77c55d0c1e8e340c2b82f8672ce02bf4dc7b05`) did not change in ANY of these 22
-commits — it was verified separately before/after every commit. (This hash belongs to core **v1**; the
-later versions and their rationale: [`bb84/docs/CORE_CHANGELOG.md`](bb84/docs/CORE_CHANGELOG.md).)
+commits — it was verified separately before/after every commit. (This hash belongs to core **v1**, the core
+these rounds ran on; it is a historical record, not the current core. The current core is **v5.4**, SHA-256
+`13b8bd0c…75316c`, protocol fingerprint `6b874b6c…197cfc`; every version in between, with its hash and rationale,
+is in [`bb84/docs/CORE_CHANGELOG.md`](bb84/docs/CORE_CHANGELOG.md).)
 
 ---
 
