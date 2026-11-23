@@ -19,7 +19,7 @@ const { spawnSync } = require("child_process");
 
 const CORE_PATH = path.join(__dirname, "photonnet_core.js");
 const WORKER_PATH = path.join(__dirname, "chaos_guard_verify_worker.js");
-const CORE_SHA_EXPECTED = "4f664688da958752abb7ede77890f1d94640250aca988c6d2e7fadf46f492b39";
+const CORE_SHA_EXPECTED = "13b8bd0ccae688b682e28399c212426636990ede04c1df7784a68a4aab75316c";
 const CALL_TIMEOUT_MS = 2500;
 
 function verifyCoreHash() {

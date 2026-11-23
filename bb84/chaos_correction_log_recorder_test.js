@@ -242,7 +242,7 @@ function testBoundedMemoryNoFullPulseLogRetention() {
 function testCoreAndBufferUntouched() {
   console.log("\n── Test 8: çekirdek VE quantum_phase_buffer.js bu çalışma boyunca DEĞİŞMEDİ ──");
   const coreHash = crypto.createHash("sha256").update(fs.readFileSync(path.join(__dirname, "photonnet_core.js"))).digest("hex");
-  const expectedCoreHash = "4f664688da958752abb7ede77890f1d94640250aca988c6d2e7fadf46f492b39";
+  const expectedCoreHash = "13b8bd0ccae688b682e28399c212426636990ede04c1df7784a68a4aab75316c";
   check("bb84/photonnet_core.js SHA-256 beklenen değerle eşleşiyor", coreHash === expectedCoreHash, `hash=${coreHash}`);
 
   // quantum_phase_buffer.js için sabit bir "beklenen" hash YOK (bu oturumda

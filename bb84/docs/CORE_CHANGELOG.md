@@ -21,6 +21,7 @@ EIC test raporu) **v1** hash'ine atıf yapar — bu beklenen bir durumdur, o bel
 | v5.2 | `6a5effd30eb0be09d1e8bcc9701ddbeba236a0db38818edafc90adac16e91c6b` | `6a5effd3…e91c6b` |
 | v5.3 | `f8c93cbba99124b5c35e0d0b01601b2bf5982689a9ebf08dc2b0c709cef0008f` | `f8c93cbb…f0008f` |
 | v5.4 | `4f664688da958752abb7ede77890f1d94640250aca988c6d2e7fadf46f492b39` | `4f664688…492b39` |
+| v5.4 (yalnız arayüz: başlık) | `13b8bd0ccae688b682e28399c212426636990ede04c1df7784a68a4aab75316c` | `13b8bd0c…75316c` |
 
 ### Sürüm ↔ commit ↔ hash eşlemesi (hakem bulgusu P1-2)
 
@@ -45,11 +46,22 @@ Her satır `git show <commit>:bb84/photonnet_core.js | sha256sum` ile yeniden ü
 | v5.2 | 3d615e2 | 2026-11-17 | `6a5effd3…e91c6b` | `f8cfe1b5…03788c` | algoritma |
 | v5.3 | 2325e7a | 2026-11-20 | `f8c93cbb…f0008f` | `b5b0a321…a8ed1d` | algoritma |
 | v5.4 | 7218829 | 2026-11-20 | `4f664688…492b39` | `6b874b6c…197cfc` | algoritma |
+| v5.4 | bu commit | 2026-11-23 | `13b8bd0c…75316c` | `6b874b6c…197cfc` | yalnız arayüz (sürüm adı değişmedi) |
 
 Bulgu: v4.1, v4.2 ve v4.3 "çekirdek sürümü" olarak numaralandı ama protokolleri v4 ile aynıdır; o dönemde sürüm
 numarası arayüz değişikliğinde de artırıldı. v5 adı altında iki farklı dosya hash'i vardır (5fe76eb ve f391152);
 protokol aynıdır. v5.1 adı altında iki farklı protokol vardır (6aa3efe ve 9a07e62). Bundan sonra sürüm numarası
 yalnız parmak izi değişince artar; yalnız dosya hash'i değişirse sürüm aynı kalır ve tabloya yeni bir satır eklenir.
+
+## v5.4, yalnız arayüz (2026-11-23) — uygulama başlığı ürün adıyla aynı
+
+**Algoritma değişmedi** (protokol parmak izi `6b874b6c…197cfc`, v5.4 ile aynı). Ürün adı "PhotonNet: QKD Network Simulator
+with ETSI-014 Key Management" oldu; uygulamanın üst başlığındaki "QUANTUM OPTICAL NETWORK" metni simülatörü optik bir ağ
+gibi gösteriyordu. `PhotonNet2.jsx`'te tek satır: "QKD NETWORK SIMULATOR · ETSI-014 KEY MANAGEMENT v… · ÇEKİRDEK …".
+Çekirdek arayüz kaynağından çıkarıldığı için dosya hash'i değişti; kural gereği sürüm adı aynı kaldı ve tabloya satır
+eklendi. Sabitlenmiş testler yeni hash'e güncellendi.
+
+- Dosya SHA-256 `13b8bd0ccae688b682e28399c212426636990ede04c1df7784a68a4aab75316c`.
 
 ## v5.4 (2026-11) — teslim aşamasında encrypt-then-MAC, kimlik doğrulamanın ε katkısı birleşimde
 

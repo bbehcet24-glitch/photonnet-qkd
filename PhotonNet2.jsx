@@ -13769,7 +13769,7 @@ function PhotonNet() {
       <div style={{fontSize:12,fontWeight:700,letterSpacing:".14em",
         color:"#00d4ff",textShadow:"0 0 10px #00d4ff55"}}>PHOTONNET</div>
       <div style={{fontSize:8,color:"#1e3a5f",letterSpacing:".16em",marginTop:-1}}>
-        QUANTUM OPTICAL NETWORK v{PHOTONNET_VERSION} · ÇEKİRDEK {PHOTONNET_CORE_VERSION}
+        QKD NETWORK SIMULATOR · ETSI-014 KEY MANAGEMENT v{PHOTONNET_VERSION} · ÇEKİRDEK {PHOTONNET_CORE_VERSION}
       </div>
     </div>
     {[

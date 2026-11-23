@@ -173,7 +173,7 @@ Concrete mechanisms that enforce this pattern:
   of `photonnet_core.js` (and, where relevant, of other read-only bridge files such as
   `timetag_acquisition_bridge.js`) before and after running — the claim "the core was not touched" is
   re-proven on every run, not assumed once. When the core deliberately moves to a new version (currently
-  **v5.4**, SHA-256 `4f664688…492b39`), the old/new hash and every changed function are documented in
+  **v5.4**, SHA-256 `13b8bd0c…75316c` after a UI-only title change; protocol fingerprint unchanged), the old/new hash and every changed function are documented in
   [`bb84/docs/CORE_CHANGELOG.md`](bb84/docs/CORE_CHANGELOG.md), and all pinned tests are updated to the new
   hash and re-run. The file hash also changes when only UI text changes (the core is extracted from the UI
   source), so a second anchor, the **protocol fingerprint** (`bb84/tools/protocol_fingerprint.js`, SHA-256 over
